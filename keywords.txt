@@ -1,0 +1,34 @@
+#######################################
+# Syntax Coloring Map For Test
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Stepper	KEYWORD1	Stepper
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+max_freq	KEYWORD2
+min_freq	KEYWORD2
+speed_rpm	KEYWORD2
+speed_spm	KEYWORD2
+speed_freq	KEYWORD2
+init		KEYWORD2
+direction	KEYWORD2
+move_steps	KEYWORD2
+move_async	KEYWORD2
+move_laps	KEYWORD2
+start		KEYWORD2
+stop		KEYWORD2
+######################################
+# Instances (KEYWORD2)
+#######################################
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
