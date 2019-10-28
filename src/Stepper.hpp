@@ -201,7 +201,7 @@ class Stepper
 
       this->enable(HIGH);
 
-      while(step<_nb_steps)
+      while(step< (_mv_type==MOVE_TYPE::HALF_STEP?_nb_steps*2:_nb_steps) )
       {
         unsigned long r_elsp=micros()-this->m_elaps;
 
