@@ -197,7 +197,7 @@ class Stepper
       
       this->m_ie=0;
       this->m_elaps=micros();
-      int step=0;
+      unsigned long step=0;
 
       this->enable(HIGH);
 
