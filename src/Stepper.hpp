@@ -111,7 +111,7 @@ class Stepper
 
     inline void enable(bool const & _enable)
     {
-      ///set enable pin if used, delay is secure for LD297,298, or other bright ....
+      ///set enable pin if used, delay is secure for L293D, or other bright ....
       delayMicroseconds(1);
       
       if(this->m_enable_pin!=nullptr)
