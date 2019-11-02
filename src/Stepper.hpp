@@ -247,7 +247,7 @@ class Stepper
     
   protected:
 
-  void next_step(MOVE_TYPE const& _mv_type)
+  virtual void next_step(MOVE_TYPE const& _mv_type)
   {
     ///this methode determinate the nexte step and the sequance type
     int next=this->m_stop_step_pos+this->m_dir;
