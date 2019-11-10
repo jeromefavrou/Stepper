@@ -111,7 +111,7 @@ class Stepper
 
     inline void enable(bool const & _enable)
     {
-      ///set enable pin if used, delay is secure for L293D, or other bright ....
+      ///set enable pin if used, delay is secure for LD297,298, or other bright ....
       delayMicroseconds(1);
       
       if(this->m_enable_pin!=nullptr)
@@ -197,7 +197,7 @@ class Stepper
       
       this->m_ie=0;
       this->m_elaps=micros();
-      unsigned long step=0;
+      int step=0;
 
       this->enable(HIGH);
 
@@ -247,7 +247,7 @@ class Stepper
     
   protected:
 
-  virtual void next_step(MOVE_TYPE const& _mv_type)
+  void next_step(MOVE_TYPE const& _mv_type)
   {
     ///this methode determinate the nexte step and the sequance type
     int next=this->m_stop_step_pos+this->m_dir;
