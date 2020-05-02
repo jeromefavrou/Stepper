@@ -1,6 +1,6 @@
 #include "Stepper.hpp"
 
-Stepper BM_stepper(48,120.0*141.0*(140.0/27.0));
+Stepper BM_stepper(48,120.0*141.0*(140.0/27.0)); //(nb_steps , reductor factor )
 
 void setup() 
 {
