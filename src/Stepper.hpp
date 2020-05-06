@@ -6,7 +6,7 @@
 #endif
 
 #ifndef Stepper_version
-  #define Stepper_version 0x01
+  #define Stepper_version 0x02
 #endif
 
 class Stepper
@@ -63,6 +63,11 @@ class Stepper
         delete this->m_enable_pin;
       }
     };
+  
+    inline unsigned long get_inter_delay() const
+    {
+      return this->m_inter_delay;
+    }
   
     inline void direction(DIRECTION const & _dir)
     {
