@@ -191,6 +191,12 @@ class Stepper
       ///rotate for n laps and for an sequance type
       this->move_steps(_nb_laps*this->m_nb_step,_mv_type);
     }
+  
+    virtual void move_degs(float const & _angle,MOVE_TYPE const& _mv_type=MOVE_TYPE::FULL_STEP)
+    {
+      ///rotate for n laps and for an sequance type
+      this->move_steps(this->m_nb_step * _angle/360.0,_mv_type);
+    }
     
     virtual void move_steps(unsigned long const & _nb_steps,MOVE_TYPE const& _mv_type=MOVE_TYPE::FULL_STEP)
     {
